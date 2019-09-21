@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<!--<script src="script.js"></script> -->
+</head>
+<body>	
+	<div class="Desktop-1">
+		<div class="main-container">
+			<header class="header">
+				<img src="img/w-mercury-development.svg" class="W-Mercury-Development">
+			</header>
+			<section id="show" class="login-container">
+				<form class="login-form">
+					<div class="login-title-container">
+						<p class="login-title">Log In</p>
+					</div>
+					<input id="login" class="input-login" type="email" placeholder="E-Mail" value="">
+					<input id="password" class="input-login" type="Password" placeholder="Password" value="">
+					<div id="error-container" class="error-container">
+						<p class="error-text"> E-Mail or password is incorrect </p>
+					</div>
+					<input id="button-login" class="button" type="button" value="Login">
+					<script src="script.js"></script>
+				</form>
+			</section>
+			<section id="hide" class="account-container">
+				<div id="account-div" class="account-detail">
+					<!-- account img from script.js: <img class="account-img" src="..."> -->
+					<!-- account name from script.js: <p class="account-name">...</p>-->
+					<button id="button-logout" class="button">Logout</button>
+					<script type="text/javascript">
+						document.getElementById("button-logout").addEventListener('click', function(e) {
+							location.href = "index.html";
+						});
+					</script>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
